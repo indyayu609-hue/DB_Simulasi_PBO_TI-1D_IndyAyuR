@@ -16,9 +16,9 @@ class PendaftaranPrestasi extends Pendaftaran {
         }
     }
 
-    // Mengimplementasikan metode abstrak dari Tahap 3
+    // TAHAP 5 PERBAIKAN: Method Overriding sesuai aturan diskon Rp50.000
     public function hitungTotalBiaya() {
-        return $this->biayaPendaftaranDasar; // Sesuai instruksi dasar, atau bisa disesuaikan nanti
+        return $this->biayaPendaftaranDasar - 50000; 
     }
 
     public function tampilkanInfoJalur() {

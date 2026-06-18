@@ -16,9 +16,9 @@ class PendaftaranKedinasan extends Pendaftaran {
         }
     }
 
-    // Mengimplementasikan metode abstrak dari Tahap 3
+    // TAHAP 5 PERBAIKAN: Method Overriding dengan tambahan biaya khusus 25% (* 1.25)
     public function hitungTotalBiaya() {
-        return $this->biayaPendaftaranDasar;
+        return $this->biayaPendaftaranDasar * 1.25;
     }
 
     public function tampilkanInfoJalur() {
